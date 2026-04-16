@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+<title>NOVO DFL 2026 — Jogue a COPA DO MUNDO 2026 no seu Celular | Link Direto Sem Encurtador</title>
+<meta name="description" content="Jogue a Copa do Mundo 2026 com todas as seleções e elencos atualizados! Link direto, SEM encurtador, SEM anúncio. Brasileirão + Ligas Europeias. Baixe agora por R$ 5." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --green: #00E676;
+    --green-dark: #00B35A;
+    --green-glow: rgba(0, 230, 118, 0.4);
+    --gold: #FFD700;
+    --gold-dark: #DAA520;
+    --gold-glow: rgba(255, 215, 0, 0.4);
+    --brazil-yellow: #FFDF00;
+    --brazil-blue: #002776;
+    --black: #000000;
+    --bg: #0A0A0A;
+    --bg-card: #141414;
+    --bg-card-2: #1A1A1A;
+    --border: rgba(255, 255, 255, 0.08);
+    --border-gold: rgba(255, 215, 0, 0.3);
+    --border-green: rgba(0, 230, 118, 0.3);
+    --text: #FFFFFF;
+    --text-dim: #A0A0A0;
+    --text-dimmer: #6B6B6B;
+    --red: #FF3B30;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Manrope', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+  img { max-width: 100%; display: block; }
+  .container { max-width: 480px; margin: 0 auto; padding: 0 20px; position: relative; }
+
+  /* ========== ANNOUNCEMENT BAR ========== */
+  .announce {
+    background: linear-gradient(90deg, var(--gold) 0%, #FFA500 50%, var(--gold) 100%);
+    color: var(--black);
+    text-align: center;
+    padding: 10px 16px;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 0.02em;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    overflow: hidden;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+  }
+  .announce-scroll {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll-x 22s linear infinite;
+  }
+  @keyframes scroll-x {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .announce span { margin: 0 18px; }
+
+  /* ========== HERO ========== */
+  .hero {
+    position: relative;
+    padding: 28px 0 40px;
+    overflow: hidden;
+    background:
+      radial-gradient(ellipse 90% 60% at 50% 0%, rgba(255, 215, 0, 0.12), transparent 70%),
+      radial-gradient(ellipse 70% 50% at 50% 40%, rgba(0, 230, 118, 0.15), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(255, 215, 0, 0.08), transparent 60%),
+      var(--bg);
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0, 230, 118, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 230, 118, 0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, black 30%, transparent 80%);
+    pointer-events: none;
+  }
+  .hero-content { position: relative; z-index: 2; }
+
+  .badge-copa {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(90deg, rgba(255, 215, 0, 0.15), rgba(0, 230, 118, 0.12));
+    color: var(--gold);
+    border: 1px solid var(--border-gold);
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+  }
+  .badge-copa .dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 0 var(--gold);
+    animation: pulse-gold 2s infinite;
+  }
+  @keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 var(--gold-glow); }
+    70% { box-shadow: 0 0 0 10px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+  }
+
+  h1.hero-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: clamp(36px, 11vw, 54px);
+    line-height: 0.92;
+    letter-spacing: -0.03em;
+    margin-bottom: 14px;
+  }
+  h1.hero-title .gold {
+    background: linear-gradient(180deg, #FFE55C 0%, #FFD700 50%, #DAA520 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+    text-shadow: 0 0 40px rgba(255, 215, 0, 0.2);
+  }
+  h1.hero-title .green { color: var(--green); display: block; }
+
+  .hero-sub {
+    font-size: 16px;
+    color: var(--text-dim);
+    margin-bottom: 24px;
+    max-width: 95%;
+  }
+  .hero-sub strong { color: var(--text); font-weight: 700; }
+  .hero-sub .highlight-gold { color: var(--gold); font-weight: 800; }
+  .hero-sub .highlight-green { color: var(--green); font-weight: 800; }
+
+  /* Strike through no encurtador */
+  .anti-shortener {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255, 59, 48, 0.08);
+    border: 1px solid rgba(255, 59, 48, 0.25);
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--red);
+  }
+  .anti-shortener s { color: var(--text-dimmer); font-weight: 500; }
+  .anti-shortener .yes { color: var(--green); }
+
+  /* Prova social */
+  .social-inline {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 12px 14px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+  }
+  .avatars { display: flex; }
+  .avatars .av {
+    width: 32px; height: 32px; border-radius: 50%;
+    border: 2px solid var(--bg-card);
+    margin-left: -10px;
+    font-weight: 800;
+    font-size: 12px;
+    display: flex; align-items: center; justify-content: center;
+    color: white;
+  }
+  .avatars .av:first-child { margin-left: 0; }
+  .av-1 { background: linear-gradient(135deg, #00E676, #00B35A); }
+  .av-2 { background: linear-gradient(135deg, #FFD700, #FFA500); }
+  .av-3 { background: linear-gradient(135deg, #002776, #1565C0); }
+  .av-4 { background: linear-gradient(135deg, #FF6B35, #C70039); }
+  .social-text { font-size: 12px; color: var(--text-dim); line-height: 1.3; }
+  .social-text strong { color: var(--text); display: block; font-size: 13px; }
+  .stars { color: var(--gold); font-size: 11px; letter-spacing: 2px; }
+
+  /* TROFÉU DA COPA NO HERO */
+  .trophy-hero {
+    position: relative;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto 28px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .trophy-hero::before {
+    content: '';
+    position: absolute;
+    width: 280px; height: 280px;
+    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
+    filter: blur(20px);
+    animation: glow-pulse 3s ease-in-out infinite;
+  }
+  @keyframes glow-pulse {
+    0%, 100% { opacity: 0.6; transform: scale(1); }
+    50% { opacity: 1; transform: scale(1.1); }
+  }
+
+  /* Stadium background on trophy */
+  .trophy-bg {
+    position: absolute;
+    width: 100%; height: 100%;
+    border-radius: 50%;
+    background:
+      radial-gradient(ellipse at center bottom, rgba(0, 230, 118, 0.15), transparent 60%),
+      repeating-linear-gradient(90deg, transparent 0 15px, rgba(0, 230, 118, 0.06) 15px 16px);
+    border: 1px solid var(--border);
+    overflow: hidden;
+  }
+  .trophy-bg::after {
+    content: '';
+    position: absolute;
+    bottom: 20%; left: 50%;
+    transform: translateX(-50%);
+    width: 60%; height: 40%;
+    border: 1px solid rgba(0, 230, 118, 0.3);
+    border-bottom: none;
+    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  }
+
+  /* SVG Trophy */
+  .trophy-svg {
+    position: relative;
+    width: 180px;
+    height: 220px;
+    z-index: 2;
+    animation: float 4s ease-in-out infinite;
+    filter: drop-shadow(0 20px 40px rgba(255, 215, 0, 0.4));
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(-2deg); }
+    50% { transform: translateY(-8px) rotate(2deg); }
+  }
+
+  /* Sparkles */
+  .sparkle {
+    position: absolute;
+    width: 8px; height: 8px;
+    background: var(--gold);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--gold);
+    animation: sparkle 2s ease-in-out infinite;
+  }
+  .sparkle:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s; }
+  .sparkle:nth-child(2) { top: 30%; right: 12%; animation-delay: 0.4s; }
+  .sparkle:nth-child(3) { bottom: 30%; left: 10%; animation-delay: 0.8s; }
+  .sparkle:nth-child(4) { top: 50%; right: 18%; animation-delay: 1.2s; width: 6px; height: 6px; }
+  .sparkle:nth-child(5) { bottom: 25%; right: 25%; animation-delay: 1.6s; width: 5px; height: 5px; }
+  @keyframes sparkle {
+    0%, 100% { opacity: 0; transform: scale(0); }
+    50% { opacity: 1; transform: scale(1); }
+  }
+
+  /* Flags flying */
+  .flags-flying {
+    position: absolute;
+    display: flex;
+    gap: 8px;
+    bottom: 10%;
+    justify-content: center;
+    width: 100%;
+    z-index: 3;
+  }
+  .mini-flag {
+    width: 26px; height: 18px;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .flag-br { background: linear-gradient(135deg, #009739 0%, #009739 40%, #FFDF00 40%, #FFDF00 60%, #012169 60%, #012169 100%); }
+  .flag-ar { background: linear-gradient(180deg, #74ACDF 33%, #FFF 33% 66%, #74ACDF 66%); }
+  .flag-fr { background: linear-gradient(90deg, #0055A4 33%, #FFF 33% 66%, #EF4135 66%); }
+  .flag-pt { background: linear-gradient(90deg, #046A38 35%, #DA291C 35%); }
+  .flag-de { background: linear-gradient(180deg, #000 33%, #DD0000 33% 66%, #FFCE00 66%); }
+
+  /* CTA principal */
+  .cta-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--green) 0%, #00C853 100%);
+    color: var(--black);
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    padding: 20px 24px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: 0.01em;
+    position: relative;
+    overflow: hidden;
+    box-shadow:
+      0 0 0 0 var(--green-glow),
+      0 10px 30px rgba(0, 230, 118, 0.35),
+      inset 0 -4px 0 rgba(0,0,0,0.15);
+    transition: transform 0.15s ease;
+    animation: cta-pulse 2.5s ease-in-out infinite;
+  }
+  @keyframes cta-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 var(--green-glow), 0 10px 30px rgba(0, 230, 118, 0.35), inset 0 -4px 0 rgba(0,0,0,0.15); }
+    50% { box-shadow: 0 0 0 14px rgba(0, 230, 118, 0), 0 10px 30px rgba(0, 230, 118, 0.5), inset 0 -4px 0 rgba(0,0,0,0.15); }
+  }
+  .cta-primary:active { transform: scale(0.98); }
+  .cta-primary::after {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shine 3s infinite;
+  }
+  @keyframes shine {
+    0%, 100% { left: -100%; }
+    50% { left: 100%; }
+  }
+
+  .cta-meta {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .cta-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-dim);
+    font-weight: 600;
+  }
+  .cta-meta-item svg { color: var(--green); flex-shrink: 0; }
+
+  /* ========== URGÊNCIA / TIMER ========== */
+  .urgency-bar {
+    background: linear-gradient(90deg, #1a0a0a, #2a0a0a, #1a0a0a);
+    border-top: 1px solid rgba(255, 59, 48, 0.3);
+    border-bottom: 1px solid rgba(255, 59, 48, 0.3);
+    padding: 14px 20px;
+    text-align: center;
+  }
+  .urgency-title {
+    color: var(--red);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .urgency-title .live-dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--red);
+    animation: blink 1s infinite;
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 22px;
+    color: white;
+  }
+  .timer-unit {
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 6px 12px;
+    border-radius: 8px;
+    min-width: 52px;
+  }
+  .timer-unit small {
+    display: block;
+    font-family: 'Manrope', sans-serif;
+    font-size: 9px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .timer-sep { color: var(--red); align-self: center; }
+
+  /* ========== SECTIONS ========== */
+  section { padding: 56px 0; position: relative; }
+  .section-eyebrow {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: var(--green);
+    text-align: center;
+    margin-bottom: 12px;
+  }
+  .section-eyebrow.gold { color: var(--gold); }
+  .section-title {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: clamp(28px, 8vw, 38px);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .section-title .green { color: var(--green); }
+  .section-title .gold {
+    background: linear-gradient(180deg, #FFE55C, #DAA520);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .section-sub {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 15px;
+    max-width: 380px;
+    margin: 0 auto 36px;
+  }
+
+  /* ========== SEÇÃO COPA DO MUNDO ========== */
+  .copa-section {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(255, 215, 0, 0.08), transparent 70%),
+      linear-gradient(180deg, #0a0a0a 0%, #0d0a05 50%, #0a0a0a 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  .copa-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 15% 30%, rgba(255, 215, 0, 0.15) 1px, transparent 2px),
+      radial-gradient(circle at 85% 70%, rgba(255, 215, 0, 0.1) 1px, transparent 2px),
+      radial-gradient(circle at 50% 15%, rgba(255, 215, 0, 0.08) 1px, transparent 2px);
+    background-size: 120px 120px, 100px 100px, 80px 80px;
+    pointer-events: none;
+  }
+  .copa-section .container { position: relative; z-index: 2; }
+
+  .selections-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 28px 0;
+  }
+  .selection {
+    aspect-ratio: 1;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 8px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  .selection:hover { transform: translateY(-4px); border-color: var(--border-gold); }
+  .selection .flag {
+    width: 36px; height: 24px;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  }
+  .selection .name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: var(--text-dim);
+  }
+  .selection.featured {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.12), rgba(0, 230, 118, 0.08));
+    border-color: var(--border-gold);
+  }
+  .selection.featured .name { color: var(--gold); }
+
+  .plus-more {
+    text-align: center;
+    color: var(--gold);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 8px;
+  }
+
+  /* ========== PROBLEMA vs SOLUÇÃO (focado em objeções) ========== */
+  .compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 24px;
+  }
+  .compare-card {
+    padding: 18px 14px;
+    border-radius: 14px;
+    border: 1px solid;
+  }
+  .compare-card.bad {
+    background: rgba(255, 59, 48, 0.06);
+    border-color: rgba(255, 59, 48, 0.25);
+  }
+  .compare-card.good {
+    background: rgba(0, 230, 118, 0.06);
+    border-color: var(--border-green);
+  }
+  .compare-card h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+  }
+  .compare-card.bad h4 { color: var(--red); }
+  .compare-card.good h4 { color: var(--green); }
+  .compare-list { list-style: none; }
+  .compare-list li {
+    font-size: 12.5px;
+    color: var(--text-dim);
+    padding: 6px 0;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.4;
+  }
+  .compare-card.bad li::before { content: '✕'; position: absolute; left: 0; color: var(--red); font-weight: 800; }
+  .compare-card.good li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-weight: 800; }
+
+  /* ========== FEATURES ========== */
+  .features-grid { display: flex; flex-direction: column; gap: 14px; }
+  .feature-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 22px;
+    position: relative;
+    overflow: hidden;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  .feature-card:hover { border-color: var(--border-green); transform: translateY(-2px); }
+  .feature-card.gold-feature {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.08), var(--bg-card) 80%);
+    border-color: var(--border-gold);
+  }
+  .feature-icon {
+    width: 46px; height: 46px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.04);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    border: 1px solid var(--border);
+  }
+  .feature-icon.trophy { color: var(--gold); background: rgba(255, 215, 0, 0.12); border-color: var(--border-gold); }
+  .feature-icon.globe { color: #4A90E2; background: rgba(74, 144, 226, 0.08); border-color: rgba(74, 144, 226, 0.2); }
+  .feature-icon.users { color: var(--green); background: rgba(0, 230, 118, 0.08); border-color: rgba(0, 230, 118, 0.2); }
+  .feature-icon.phone { color: #D946EF; background: rgba(217, 70, 239, 0.08); border-color: rgba(217, 70, 239, 0.2); }
+  .feature-icon.mic { color: var(--green); background: rgba(0, 230, 118, 0.08); border-color: rgba(0, 230, 118, 0.2); }
+  .feature-icon.shield { color: #FF6B35; background: rgba(255, 107, 53, 0.08); border-color: rgba(255, 107, 53, 0.2); }
+  .feature-icon.bolt { color: #00E5FF; background: rgba(0, 229, 255, 0.08); border-color: rgba(0, 229, 255, 0.2); }
+  .feature-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; color: white; }
+  .feature-card p { font-size: 14px; color: var(--text-dim); line-height: 1.5; }
+  .feature-card .tag {
+    display: inline-block;
+    background: rgba(255, 215, 0, 0.15);
+    color: var(--gold);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 3px 8px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  /* ========== PUSH GREEN ========== */
+  .push-green {
+    background: linear-gradient(135deg, var(--green) 0%, #00C853 100%);
+    color: var(--black);
+    padding: 56px 0;
+    position: relative;
+    overflow: hidden;
+  }
+  .push-green::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      radial-gradient(circle at 20% 30%, rgba(0,0,0,0.1) 2px, transparent 3px),
+      radial-gradient(circle at 80% 70%, rgba(0,0,0,0.1) 2px, transparent 3px);
+    background-size: 60px 60px;
+    opacity: 0.3;
+  }
+  .push-green .container { position: relative; z-index: 2; }
+  .push-green h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: clamp(30px, 8vw, 42px);
+    line-height: 0.95;
+    letter-spacing: -0.02em;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .push-green p {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    text-align: center;
+  }
+  .push-green .price-highlight {
+    background: var(--black);
+    color: var(--green);
+    padding: 2px 8px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  .cta-black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    background: var(--black);
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: 17px;
+    padding: 20px 24px;
+    border: 2px solid var(--black);
+    border-radius: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 24px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.15s ease;
+  }
+  .cta-black:active { transform: scale(0.98); }
+
+  /* ========== PRICING ========== */
+  .pricing { background: var(--bg); padding: 56px 0 48px; }
+  .price-divider {
+    width: 80px; height: 3px;
+    background: var(--green);
+    margin: 0 auto 36px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px var(--green-glow);
+  }
+  .price-cards { display: flex; flex-direction: column; gap: 16px; }
+  .price-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 28px 22px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  .price-card.popular {
+    border: 2px solid var(--gold);
+    background: linear-gradient(180deg, rgba(255, 215, 0, 0.08), var(--bg-card));
+    box-shadow: 0 0 40px rgba(255, 215, 0, 0.15);
+  }
+  .popular-badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, var(--gold), #FFA500);
+    color: var(--black);
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: 800;
+    box-shadow: 0 4px 12px var(--gold-glow);
+    white-space: nowrap;
+  }
+  .price-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+  .price-header .tier {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    color: var(--text-dim);
+  }
+  .price-card.popular .price-header .tier { color: var(--gold); }
+  .price-big {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+  .price-big .currency { font-size: 14px; font-weight: 700; color: var(--text-dim); }
+  .price-big .amount {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 56px;
+    line-height: 1;
+    color: white;
+  }
+  .price-card.popular .price-big .amount {
+    background: linear-gradient(180deg, #FFE55C, #DAA520);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .price-big .original {
+    font-size: 14px;
+    color: var(--text-dimmer);
+    text-decoration: line-through;
+    margin-left: 6px;
+  }
+  .price-caption {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 20px;
+  }
+  .price-caption .save { color: var(--green); font-weight: 800; }
+  .price-card.popular .price-caption .save { color: var(--gold); }
+  .price-features { list-style: none; margin-bottom: 24px; }
+  .price-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.4;
+  }
+  .price-features li svg { color: var(--green); flex-shrink: 0; margin-top: 2px; }
+  .price-card.popular .price-features li svg { color: var(--gold); }
+  .price-features li strong { color: white; font-weight: 700; }
+  .price-features li.hot {
+    background: rgba(255, 215, 0, 0.06);
+    margin: 4px -10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+  }
+  .price-cta {
+    display: block;
+    width: 100%;
+    background: var(--bg-card-2);
+    color: white;
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: 15px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  .price-card.popular .price-cta {
+    background: linear-gradient(135deg, var(--gold), #FFA500);
+    color: var(--black);
+    border-color: var(--gold);
+    box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
+  }
+  .price-cta:active { transform: scale(0.98); }
+
+  .secure-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 24px;
+    color: var(--text-dim);
+    font-size: 12px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+  }
+  .payment-methods {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 14px;
+    flex-wrap: wrap;
+  }
+  .pay-method {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+    color: var(--text-dim);
+    font-weight: 700;
+  }
+
+  /* ========== GUARANTEE ========== */
+  .guarantee {
+    background: linear-gradient(135deg, rgba(0, 230, 118, 0.08), transparent);
+    border: 1px solid var(--border-green);
+    border-radius: 20px;
+    padding: 28px 22px;
+    margin: 40px 0;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .guarantee-seal {
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--green), var(--green-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 9px;
+    text-align: center;
+    line-height: 1;
+    flex-shrink: 0;
+    box-shadow: 0 0 20px var(--green-glow);
+    position: relative;
+  }
+  .guarantee-seal::before {
+    content: '';
+    position: absolute;
+    inset: -6px;
+    border: 2px dashed var(--green);
+    border-radius: 50%;
+    opacity: 0.4;
+    animation: spin 20s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .guarantee h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; color: white; }
+  .guarantee p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
+
+  /* ========== TESTIMONIALS ========== */
+  .testimonials-grid { display: flex; flex-direction: column; gap: 14px; }
+  .testimonial {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    position: relative;
+  }
+  .testimonial-stars {
+    color: var(--gold);
+    margin-bottom: 10px;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .testimonial p {
+    font-style: italic;
+    font-size: 14px;
+    color: white;
+    line-height: 1.5;
+    margin-bottom: 14px;
+  }
+  .testimonial-author { display: flex; align-items: center; gap: 10px; }
+  .testimonial-avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 230, 118, 0.15);
+    border: 1px solid var(--border-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--green);
+    font-weight: 800;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .testimonial-meta { flex: 1; }
+  .testimonial-name { font-size: 13px; font-weight: 700; color: var(--text-dim); }
+  .verified {
+    font-size: 11px;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+  }
+
+  /* ========== TUTORIAL STEPS ========== */
+  .steps-grid { display: flex; flex-direction: column; gap: 12px; margin-top: 24px; }
+  .step {
+    display: flex;
+    gap: 14px;
+    padding: 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    align-items: flex-start;
+  }
+  .step-number {
+    flex-shrink: 0;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 230, 118, 0.15);
+    border: 1px solid var(--border-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--green);
+    font-size: 16px;
+  }
+  .step h4 { font-size: 15px; font-weight: 800; margin-bottom: 4px; color: white; }
+  .step p { font-size: 13px; color: var(--text-dim); line-height: 1.4; }
+
+  /* ========== FAQ ========== */
+  .faq-list { display: flex; flex-direction: column; gap: 10px; }
+  .faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+  }
+  .faq-item[open] { border-color: var(--border-green); }
+  .faq-item summary {
+    padding: 18px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: '+';
+    color: var(--green);
+    font-size: 22px;
+    font-weight: 400;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+  .faq-item[open] summary::after { transform: rotate(45deg); }
+  .faq-content {
+    padding: 0 20px 18px;
+    color: var(--text-dim);
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .faq-content strong { color: white; }
+
+  /* ========== FINAL CTA ========== */
+  .final-cta {
+    background:
+      radial-gradient(ellipse 70% 50% at 50% 50%, rgba(255, 215, 0, 0.12), transparent),
+      radial-gradient(ellipse 70% 50% at 50% 80%, rgba(0, 230, 118, 0.1), transparent),
+      var(--bg);
+    padding: 60px 0;
+    text-align: center;
+  }
+  .final-cta h2 {
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: clamp(30px, 9vw, 42px);
+    line-height: 0.95;
+    margin-bottom: 8px;
+  }
+  .final-cta h2 .gold {
+    background: linear-gradient(180deg, #FFE55C, #DAA520);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: block;
+  }
+  .final-cta p {
+    color: var(--text-dim);
+    font-size: 15px;
+    margin-bottom: 28px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ========== FOOTER ========== */
+  footer {
+    padding: 30px 20px 80px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+  }
+  footer p {
+    font-size: 12px;
+    color: var(--text-dimmer);
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+  footer a { color: var(--text-dim); text-decoration: none; }
+  footer .disclaimer {
+    font-size: 10px;
+    color: var(--text-dimmer);
+    margin-top: 16px;
+    max-width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+  }
+
+  /* ========== STICKY CTA ========== */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid var(--border);
+    padding: 12px 16px;
+    z-index: 99;
+    display: none;
+    align-items: center;
+    gap: 12px;
+  }
+  .sticky-cta.show { display: flex; animation: slide-up 0.3s ease; }
+  @keyframes slide-up { from { transform: translateY(100%); } to { transform: translateY(0); } }
+  .sticky-info { flex: 1; }
+  .sticky-info .s1 {
+    font-size: 11px;
+    color: var(--gold);
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  .sticky-info .s2 { font-size: 14px; color: white; font-weight: 800; }
+  .sticky-info .s2 .old {
+    color: var(--text-dimmer);
+    text-decoration: line-through;
+    font-size: 12px;
+    margin-left: 4px;
+    font-weight: 500;
+  }
+  .sticky-cta .btn {
+    background: linear-gradient(135deg, var(--green), #00C853);
+    color: var(--black);
+    font-family: 'Archivo Black', sans-serif;
+    font-style: italic;
+    font-size: 13px;
+    padding: 12px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* ========== SCROLL REVEAL ========== */
+  .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+
+  /* ========== LIVE NOTIFICATIONS ========== */
+  .live-notification {
+    position: fixed;
+    bottom: 80px;
+    left: 12px;
+    max-width: 280px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-green);
+    border-radius: 14px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 98;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: translateX(-120%);
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  }
+  .live-notification.show { transform: translateX(0); }
+  .live-notification .avatar {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green), var(--green-dark));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 800;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+  .live-notification .info .name { font-size: 13px; font-weight: 700; color: white; }
+  .live-notification .info .action { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
+  .live-notification .info .action strong { color: var(--green); }
+
+  @media (min-width: 481px) {
+    .hero { padding: 40px 0 56px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Announcement -->
+<div class="announce">
+  <div class="announce-scroll">
+    <span>🏆 JOGUE A COPA DO MUNDO 2026 NO SEU CELULAR</span>
+    <span>⚡ LINK DIRETO · SEM ENCURTADOR · SEM ANÚNCIO</span>
+    <span>🔥 +24.871 DOWNLOADS ESSE MÊS</span>
+    <span>🏆 JOGUE A COPA DO MUNDO 2026 NO SEU CELULAR</span>
+    <span>⚡ LINK DIRETO · SEM ENCURTADOR · SEM ANÚNCIO</span>
+    <span>🔥 +24.871 DOWNLOADS ESSE MÊS</span>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="container hero-content">
+    <div class="badge-copa">
+      <span class="dot"></span>
+      🏆 EDIÇÃO COPA DO MUNDO 2026
+    </div>
+
+    <h1 class="hero-title">
+      JOGUE A
+      <span class="gold">COPA DO MUNDO</span>
+      <span class="green">NO SEU CELULAR</span>
+    </h1>
+
+    <p class="hero-sub">
+      Todas as <strong>32 seleções</strong> com elencos <span class="highlight-gold">ATUALIZADOS 2026</span> — <strong>Brasil, Argentina, França, Portugal</strong> e todas as estrelas do mundo. Bora levantar a taça pro Brasil no seu Android?
+    </p>
+
+    <div class="anti-shortener">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
+      <s>encurtador</s> • <s>anúncio</s> • <span class="yes">LINK DIRETO</span>
+    </div>
+
+    <!-- Social -->
+    <div class="social-inline">
+      <div class="avatars">
+        <div class="av av-1">J</div>
+        <div class="av av-2">M</div>
+        <div class="av av-3">R</div>
+        <div class="av av-4">+</div>
+      </div>
+      <div class="social-text">
+        <strong>+24.871 downloads</strong>
+        <span class="stars">★★★★★</span> <span style="font-size:11px">4.9/5 · 3.214 avaliações</span>
+      </div>
+    </div>
+
+    <!-- TROFÉU DA COPA -->
+    <div class="trophy-hero">
+      <div class="trophy-bg"></div>
+      <span class="sparkle"></span>
+      <span class="sparkle"></span>
+      <span class="sparkle"></span>
+      <span class="sparkle"></span>
+      <span class="sparkle"></span>
+
+      <svg class="trophy-svg" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient id="gold-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFE55C"/>
+            <stop offset="35%" style="stop-color:#FFD700"/>
+            <stop offset="70%" style="stop-color:#DAA520"/>
+            <stop offset="100%" style="stop-color:#B8860B"/>
+          </linearGradient>
+          <linearGradient id="gold-shine" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" style="stop-color:#FFF59D;stop-opacity:0.8"/>
+            <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0"/>
+            <stop offset="100%" style="stop-color:#DAA520;stop-opacity:0.4"/>
+          </linearGradient>
+          <radialGradient id="globe-grad">
+            <stop offset="0%" style="stop-color:#FFE55C"/>
+            <stop offset="100%" style="stop-color:#B8860B"/>
+          </radialGradient>
+        </defs>
+
+        <!-- Base/Pedestal -->
+        <rect x="60" y="200" width="80" height="20" rx="3" fill="url(#gold-grad)" stroke="#8B6914" stroke-width="1"/>
+        <rect x="55" y="195" width="90" height="8" rx="2" fill="url(#gold-grad)"/>
+        <rect x="65" y="180" width="70" height="18" fill="url(#gold-grad)" stroke="#8B6914" stroke-width="0.5"/>
+
+        <!-- Columns/Stem going up -->
+        <path d="M 70 180 Q 75 140 90 120 L 90 100" stroke="url(#gold-grad)" stroke-width="6" fill="none"/>
+        <path d="M 130 180 Q 125 140 110 120 L 110 100" stroke="url(#gold-grad)" stroke-width="6" fill="none"/>
+
+        <!-- Twisted middle -->
+        <ellipse cx="100" cy="130" rx="18" ry="6" fill="url(#gold-grad)" opacity="0.6"/>
+
+        <!-- Globe -->
+        <circle cx="100" cy="75" r="42" fill="url(#globe-grad)" stroke="#8B6914" stroke-width="1"/>
+
+        <!-- Globe continent details -->
+        <path d="M 75 65 Q 85 55 95 62 Q 100 70 90 78 Q 80 82 75 70 Z" fill="#B8860B" opacity="0.6"/>
+        <path d="M 110 60 Q 125 55 125 75 Q 118 85 105 80 Q 102 70 110 60 Z" fill="#B8860B" opacity="0.6"/>
+        <path d="M 90 85 Q 105 90 115 95 Q 105 105 92 100 Z" fill="#B8860B" opacity="0.5"/>
+
+        <!-- Meridians/Parallels -->
+        <ellipse cx="100" cy="75" rx="42" ry="15" fill="none" stroke="#8B6914" stroke-width="0.5" opacity="0.5"/>
+        <ellipse cx="100" cy="75" rx="20" ry="42" fill="none" stroke="#8B6914" stroke-width="0.5" opacity="0.5"/>
+        <ellipse cx="100" cy="75" rx="42" ry="30" fill="none" stroke="#8B6914" stroke-width="0.3" opacity="0.4"/>
+
+        <!-- Highlight -->
+        <ellipse cx="85" cy="55" rx="12" ry="8" fill="#FFF59D" opacity="0.5"/>
+
+        <!-- Top accent -->
+        <circle cx="100" cy="30" r="4" fill="url(#gold-grad)"/>
+
+        <!-- "FIFA 2026" label on base -->
+        <text x="100" y="213" font-family="Archivo Black, sans-serif" font-size="8" fill="#2a1a00" text-anchor="middle" font-weight="900">COPA 2026</text>
+      </svg>
+
+      <!-- Bandeirinhas voando -->
+      <div class="flags-flying">
+        <div class="mini-flag flag-br"></div>
+        <div class="mini-flag flag-ar"></div>
+        <div class="mini-flag flag-fr"></div>
+        <div class="mini-flag flag-pt"></div>
+        <div class="mini-flag flag-de"></div>
+      </div>
+    </div>
+
+    <!-- CTA principal -->
+    <a href="#ofertas" class="cta-primary" data-cta="hero">
+      QUERO JOGAR A COPA AGORA
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/>
+      </svg>
+    </a>
+
+    <div class="cta-meta">
+      <div class="cta-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Acesso Vitalício
+      </div>
+      <div class="cta-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        Sem Anúncios
+      </div>
+      <div class="cta-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Entrega Imediata
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ URGÊNCIA BAR ============ -->
+<div class="urgency-bar">
+  <div class="urgency-title">
+    <span class="live-dot"></span>
+    ⚠ PROMOÇÃO COPA — EXPIRA EM
+  </div>
+  <div class="timer" id="timer">
+    <div class="timer-unit"><span id="hours">02</span><small>HORAS</small></div>
+    <div class="timer-sep">:</div>
+    <div class="timer-unit"><span id="minutes">47</span><small>MIN</small></div>
+    <div class="timer-sep">:</div>
+    <div class="timer-unit"><span id="seconds">32</span><small>SEG</small></div>
+  </div>
+</div>
+
+<!-- ============ SEÇÃO COPA DO MUNDO ============ -->
+<section class="copa-section">
+  <div class="container">
+    <div class="section-eyebrow gold">🏆 EXCLUSIVO COPA 2026</div>
+    <h2 class="section-title">TODAS AS <span class="gold">32 SELEÇÕES</span></h2>
+    <p class="section-sub">Elencos 100% atualizados com as convocações oficiais da Copa do Mundo 2026. Monte sua seleção e leve o título pra casa.</p>
+
+    <div class="selections-grid">
+      <div class="selection featured">
+        <div class="flag flag-br"></div>
+        <div class="name">BRASIL</div>
+      </div>
+      <div class="selection">
+        <div class="flag flag-ar"></div>
+        <div class="name">ARGENTINA</div>
+      </div>
+      <div class="selection">
+        <div class="flag flag-fr"></div>
+        <div class="name">FRANÇA</div>
+      </div>
+      <div class="selection">
+        <div class="flag flag-pt"></div>
+        <div class="name">PORTUGAL</div>
+      </div>
+      <div class="selection">
+        <div class="flag flag-de"></div>
+        <div class="name">ALEMANHA</div>
+      </div>
+      <div class="selection">
+        <div class="flag" style="background: linear-gradient(135deg, #C8102E 50%, #FFF 50%);"></div>
+        <div class="name">ESPANHA</div>
+      </div>
+      <div class="selection">
+        <div class="flag" style="background: linear-gradient(90deg, #009246 33%, #FFF 33% 66%, #CE2B37 66%);"></div>
+        <div class="name">ITÁLIA</div>
+      </div>
+      <div class="selection">
+        <div class="flag" style="background: linear-gradient(180deg, #FFF 50%, #CF142B 50%);"></div>
+        <div class="name">INGLATERRA</div>
+      </div>
+    </div>
+    <div class="plus-more">+ 24 OUTRAS SELEÇÕES DO MUNDO TODO</div>
+  </div>
+</section>
+
+<!-- ============ PROBLEMA vs SOLUÇÃO ============ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">A DIFERENÇA</div>
+    <h2 class="section-title">CHEGA DE <span style="color:var(--red)">GOLPE</span></h2>
+    <p class="section-sub">Sabemos exatamente o que você já passou tentando baixar em outros lugares. Agora é diferente.</p>
+
+    <div class="compare-grid">
+      <div class="compare-card bad">
+        <h4>✕ EM OUTROS LUGARES</h4>
+        <ul class="compare-list">
+          <li>5 encurtadores diferentes</li>
+          <li>Anúncio de Bet da sorte</li>
+          <li>Servidor indisponível</li>
+          <li>Erro na pasta /data</li>
+          <li>Tela em japonês travando</li>
+          <li>É FIFA 16 maquiado</li>
+          <li>Não funciona Android 14+</li>
+          <li>Zero suporte se der erro</li>
+        </ul>
+      </div>
+      <div class="compare-card good">
+        <h4>✓ AQUI COM A GENTE</h4>
+        <ul class="compare-list">
+          <li>Link <strong style="color:var(--green)">DIRETO</strong> sem rodeio</li>
+          <li>Zero anúncio e zero Bet</li>
+          <li>Servidor próprio e estável</li>
+          <li>Instalação automática</li>
+          <li>Tudo 100% em Português</li>
+          <li>Engine 2026 reconstruída</li>
+          <li>Testado em Android 5 ao 16</li>
+          <li>Suporte WhatsApp na hora</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">O QUE VOCÊ RECEBE</div>
+    <h2 class="section-title">TUDO QUE VOCÊ <span class="green">PRECISA</span></h2>
+    <p class="section-sub">O pacote mais completo de futebol mobile do Brasil.</p>
+
+    <div class="features-grid">
+      <div class="feature-card gold-feature">
+        <div class="feature-icon trophy">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+        </div>
+        <span class="tag">⭐ DESTAQUE 2026</span>
+        <h3>Modo Copa do Mundo 2026</h3>
+        <p>Todas as 32 seleções com elencos atualizados, estádios da Copa, fase de grupos, mata-mata até a final. Leve o Brasil ao hexa no seu celular.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon globe">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3>Ligas do Mundo Inteiro</h3>
+        <p>Brasileirão A e B + Premier League, La Liga, Serie A, Bundesliga, Ligue 1 e Champions League. Todos os craques, todos os times.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon users">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Kits e Elencos Atualizados</h3>
+        <p>Uniformes oficiais 2026 de todos os clubes. Vini Jr, Mbappé, Lamine Yamal, Haaland — todas as contratações e transferências da janela.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon phone">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+        </div>
+        <h3>Roda em Qualquer Android</h3>
+        <p>Otimizado para Android 5 até o mais novo 16. Testado em celulares antigos (Moto G, Redmi) e topo de linha (Galaxy, Poco). Não trava.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon mic">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h3>Narração em Português BR</h3>
+        <p>Emoção de transmissão da Globo. Placar dinâmico, chamada de gol, comentarista BR — como se tivesse assistindo pela TV.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon bolt">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h3>Instalação Automática</h3>
+        <p>Esqueça copiar pasta /data manualmente. Nosso instalador faz tudo sozinho em 3 cliques — sem erro, sem zArchiver, sem dor de cabeça.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PUSH GREEN ============ -->
+<section class="push-green">
+  <div class="container">
+    <h2>CHEGA DE CAIR<br>EM LINK FALSO!</h2>
+    <p>Papo reto: você já perdeu HORAS tentando baixar em outros sites. Clicou em 5 encurtadores, caiu em anúncio de Bet, achou vírus e no final era FIFA 16 velho.</p>
+    <p>Aqui o papo é outro. Por <span class="price-highlight">R$ 5,00</span> (menos que uma coxinha), você recebe o <strong>link direto no e-mail</strong>, baixa em 2 minutos e sai jogando a Copa do Mundo 2026 com o Brasil.</p>
+
+    <a href="#ofertas" class="cta-black" data-cta="push">
+      VER OFERTA ESPECIAL 🚀
+    </a>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">SIMPLES ASSIM</div>
+    <h2 class="section-title">EM 3 <span class="green">PASSOS</span></h2>
+    <p class="section-sub">Nada de encurtador infinito. Do pagamento ao primeiro gol em menos de 5 minutos.</p>
+
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-number">1</div>
+        <div>
+          <h4>Escolha seu pack e pague</h4>
+          <p>PIX aprovado na hora, cartão em 2 minutos. Pagamento 100% seguro via gateway oficial.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">2</div>
+        <div>
+          <h4>Link direto no seu e-mail</h4>
+          <p>Nada de encurtador. Você recebe o link direto do Google Drive e um tutorial em vídeo de 2 minutos.</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-number">3</div>
+        <div>
+          <h4>Baixe, instale e jogue</h4>
+          <p>Instalador automático. Não precisa copiar pasta /data manualmente. Em 3 minutos você tá na final da Copa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="ofertas" class="pricing">
+  <div class="container">
+    <div class="section-eyebrow gold">ESCOLHA SEU PACK</div>
+    <h2 class="section-title">ESCOLHA SUA <span class="gold">OFERTA</span></h2>
+    <div class="price-divider"></div>
+
+    <div class="price-cards">
+      <!-- BÁSICO -->
+      <div class="price-card">
+        <div class="price-header">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#A0A0A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          <span class="tier">BÁSICO</span>
+        </div>
+        <div class="price-big">
+          <span class="currency">R$</span>
+          <span class="amount">5</span>
+          <span class="original">R$ 10</span>
+        </div>
+        <div class="price-caption">Pagamento único · <span class="save">50% OFF hoje</span></div>
+
+        <ul class="price-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>APK + DATA + OBB</strong> (completo)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Brasileirão Série A e B 2026</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Kits e uniformes 2026</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Narração em Português BR</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tutorial em vídeo passo a passo</span></li>
+        </ul>
+
+        <a href="#" class="price-cta" data-cta="basico" data-price="5">COMPRAR — R$ 5,00</a>
+      </div>
+
+      <!-- PACK COPA -->
+      <div class="price-card popular">
+        <div class="popular-badge">🏆 EDIÇÃO COPA · MAIS VENDIDO</div>
+        <div class="price-header">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+          <span class="tier">PACK COPA COMPLETO</span>
+        </div>
+        <div class="price-big">
+          <span class="currency">R$</span>
+          <span class="amount">10</span>
+          <span class="original">R$ 27</span>
+        </div>
+        <div class="price-caption">Pagamento único · <span class="save">Vitalício · 63% OFF</span></div>
+
+        <ul class="price-features">
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Tudo da oferta básica</strong></span></li>
+          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🏆 <strong>Modo Copa do Mundo 2026</strong> com 32 seleções</span></li>
+          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🌍 <strong>Todas as ligas do mundo</strong> (Premier, La Liga, Bundesliga, Serie A, Ligue 1)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Atualizações vitalícias</strong> (elencos + kits)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Estádios brasileiros e da Copa em HD</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Suporte prioritário</strong> por WhatsApp</span></li>
+        </ul>
+
+        <a href="#" class="price-cta" data-cta="completo" data-price="10">QUERO O PACK COMPLETO — R$ 10</a>
+      </div>
+    </div>
+
+    <div class="secure-line">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      COMPRA 100% SEGURA · ENTREGA IMEDIATA
+    </div>
+
+    <div class="payment-methods">
+      <div class="pay-method">PIX</div>
+      <div class="pay-method">CARTÃO</div>
+      <div class="pay-method">BOLETO</div>
+      <div class="pay-method">GOOGLE PAY</div>
+    </div>
+
+    <!-- GARANTIA -->
+    <div class="guarantee">
+      <div class="guarantee-seal">GARANTIA<br>7 DIAS</div>
+      <div>
+        <h3>Garantia Total de 7 Dias</h3>
+        <p>Se por qualquer motivo não funcionar no seu celular ou você não gostar, devolvemos <strong style="color:var(--green)">100% do seu dinheiro</strong>. Sem perguntas, sem burocracia. Seu risco é zero.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">DEPOIMENTOS REAIS</div>
+    <h2 class="section-title">QUEM BAIXOU <span class="green">APROVOU</span></h2>
+    <p class="section-sub">Veja o que a galera que já comprou tá falando.</p>
+
+    <div class="testimonials-grid">
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p>"Mano deu muito certo, muito obrigado! Meu sonho era jogar esse jogasso no celular e agora eu posso aproveitar ele 😊 Copa do Mundo zerada com o Brasil!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div class="testimonial-meta">
+            <div class="testimonial-name">Sep.Editss</div>
+            <div class="verified">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+              Compra verificada
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p>"Jogo muito bom, bem atualizadinho, 10000% aprovado ❤️ Instalei em 3 min no meu Moto G8 e já tô jogando a Copa!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div class="testimonial-meta">
+            <div class="testimonial-name">Davizz.RP7</div>
+            <div class="verified">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+              Compra verificada
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p>"Muito bom mesmo. Já tinha instalado num celular antigo A22, agora tô instalando no meu Redmi 11 novo. Jogo TOP, recomendo demais 🤝🔥"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">F</div>
+          <div class="testimonial-meta">
+            <div class="testimonial-name">Fernando Barone</div>
+            <div class="verified">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+              Compra verificada
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p>"Pegaram um FIFA antigo e fizeram uma versão TOP, melhor que muitos jogos da Play Store. E o modo Copa com o Brasil é sensacional!"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div class="testimonial-meta">
+            <div class="testimonial-name">Mundo_do_Futebol123</div>
+            <div class="verified">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+              Compra verificada
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+        <p>"Baixei aqui, 5 gigas, mas funcionou certinho. Jogo pika demais, tô na fase final da Copa com a Argentina. Vale cada centavo! 👍"</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div class="testimonial-meta">
+            <div class="testimonial-name">M. Castrop</div>
+            <div class="verified">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+              Compra verificada
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section>
+  <div class="container">
+    <div class="section-eyebrow">PERGUNTAS FREQUENTES</div>
+    <h2 class="section-title">DÚVIDAS <span class="green">FREQUENTES</span></h2>
+    <p class="section-sub">Tudo que você precisa saber antes de comprar.</p>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>🔗 Tem encurtador de link?</summary>
+        <div class="faq-content"><strong style="color:var(--green)">NÃO.</strong> Nosso link é 100% direto. Após o pagamento você recebe o link do Google Drive no e-mail — sem encurtador, sem anúncio de Bet, sem redirecionamento maluco. É clicar e baixar.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>⚠ Vai dar "erro ao copiar pasta /data"?</summary>
+        <div class="faq-content"><strong>Não.</strong> Nossa versão vem com <strong>instalador automático</strong>. Você não precisa mais copiar pasta manualmente no zArchiver nem lidar com "operação completada com erros". O instalador faz tudo sozinho.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>📱 Funciona no Android 14, 15 e 16?</summary>
+        <div class="faq-content">Sim! Temos versões específicas para <strong>Android 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 e 16</strong>. Na hora de baixar você escolhe a versão certa do seu celular. Testado em Moto G, Galaxy, Redmi, Poco, Pixel e iPhone... <em>(brincadeira, no iPhone não funciona 😅)</em>.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🌐 Aparece "servidor indisponível" ao abrir?</summary>
+        <div class="faq-content"><strong>Não vai aparecer.</strong> Esse erro comum em outras versões acontece porque usam servidor pirata que fica caindo. Nós temos <strong>servidor próprio dedicado</strong> com uptime de 99.9%. Se mesmo assim der erro, nosso suporte resolve em minutos.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🛡 É seguro? Tem vírus?</summary>
+        <div class="faq-content"><strong>100% seguro.</strong> Arquivo escaneado e verificado. Sem malware, sem anúncio abusivo, sem permissões estranhas. Mais de 24 mil pessoas já baixaram sem nenhum problema.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>⚡ Quanto tempo demora para receber?</summary>
+        <div class="faq-content">A entrega é <strong>imediata</strong>. PIX aprovado em segundos, cartão em até 2 minutos. O link chega no seu e-mail na hora e também abre direto na tela de confirmação.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🏆 O modo Copa do Mundo 2026 vem completo?</summary>
+        <div class="faq-content">Sim! Todas as <strong>32 seleções</strong> classificadas, fase de grupos, oitavas, quartas, semi e final. Estádios oficiais, narração em português e elencos com as convocações atualizadas. Você pode jogar pela seleção que quiser.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>💾 Quanto de espaço preciso?</summary>
+        <div class="faq-content">Aproximadamente <strong>5 GB livres</strong> durante a instalação. Depois de instalado, o jogo ocupa cerca de 3,2 GB no seu celular.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🎮 Precisa de internet para jogar?</summary>
+        <div class="faq-content">Só para baixar. Depois de instalado, roda <strong>100% offline</strong>. Jogue no ônibus, no avião ou no sinal ruim — sem gastar dados móveis.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🔄 Vou receber atualizações?</summary>
+        <div class="faq-content">No <strong>Básico (R$5)</strong>, você recebe a versão atual completa. No <strong>Pack Copa Completo (R$10)</strong>, você tem acesso vitalício a TODAS as atualizações futuras (elencos, kits, novas ligas) sem pagar nada a mais.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>💳 Quais formas de pagamento?</summary>
+        <div class="faq-content">PIX (aprovação em segundos), cartão de crédito/débito, boleto e Google Pay. Todo pagamento é processado por gateway seguro (Mercado Pago / Pagar.me).</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>🔙 E se eu não gostar?</summary>
+        <div class="faq-content">Você tem <strong style="color:var(--green)">7 dias de garantia total</strong>. Se não gostar por qualquer motivo (ou não funcionar no seu celular), devolvemos 100% do seu dinheiro. Basta mandar um e-mail. Sem perguntas.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="container">
+    <h2>
+      NÃO PERCA A
+      <span class="gold">COPA DO MUNDO</span>
+    </h2>
+    <p>Garanta seu acesso agora por apenas <strong style="color:var(--gold)">R$ 5,00</strong> e leve a seleção brasileira ao hexa no seu celular.</p>
+
+    <a href="#ofertas" class="cta-primary" data-cta="final">
+      QUERO LEVANTAR A TAÇA 🏆
+    </a>
+
+    <div class="cta-meta" style="margin-top: 20px;">
+      <div class="cta-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        Pagamento Seguro
+      </div>
+      <div class="cta-meta-item">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        Garantia 7 dias
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <p style="font-family:'Archivo Black',sans-serif;font-style:italic;color:white;font-size:18px;margin-bottom:8px">DFL<span style="color:var(--green)">2026</span> <span style="color:var(--gold)">🏆</span></p>
+  <p>O melhor futebol mobile do Brasil</p>
+  <p><a href="#">Termos de Uso</a> · <a href="#">Política de Privacidade</a> · <a href="#">Contato</a></p>
+  <p class="disclaimer">
+    Este produto é um mod comunitário não-oficial. Não é afiliado, patrocinado ou endossado pela FIFA, EA Sports, Konami ou qualquer outra entidade oficial. O conteúdo é fornecido para fins educacionais e de entretenimento.
+  </p>
+  <p class="disclaimer" style="margin-top:12px">© 2026 DFL Mobile Brasil · Todos os direitos reservados</p>
+</footer>
+
+<!-- ============ STICKY CTA ============ -->
+<div class="sticky-cta" id="sticky-cta">
+  <div class="sticky-info">
+    <div class="s1">🏆 EDIÇÃO COPA · OFERTA LIMITADA</div>
+    <div class="s2">R$ 5,00 <span class="old">R$ 10</span></div>
+  </div>
+  <a href="#ofertas" class="btn" data-cta="sticky">BAIXAR →</a>
+</div>
+
+<!-- ============ LIVE NOTIFICATIONS ============ -->
+<div class="live-notification" id="live-notif">
+  <div class="avatar" id="notif-avatar">J</div>
+  <div class="info">
+    <div class="name" id="notif-name">João de SP</div>
+    <div class="action">Comprou o Pack Copa · <strong>agora</strong></div>
+  </div>
+</div>
+
+<script>
+  // ========== COUNTDOWN TIMER ==========
+  (function() {
+    let endTime = Date.now() + (2 * 60 * 60 * 1000) + (47 * 60 * 1000) + (32 * 1000);
+    const h = document.getElementById('hours');
+    const m = document.getElementById('minutes');
+    const s = document.getElementById('seconds');
+
+    function update() {
+      let diff = endTime - Date.now();
+      if (diff <= 0) {
+        endTime = Date.now() + (2 * 60 * 60 * 1000);
+        diff = endTime - Date.now();
+      }
+      const hrs = Math.floor(diff / 3600000);
+      const mins = Math.floor((diff % 3600000) / 60000);
+      const secs = Math.floor((diff % 60000) / 1000);
+      h.textContent = String(hrs).padStart(2, '0');
+      m.textContent = String(mins).padStart(2, '0');
+      s.textContent = String(secs).padStart(2, '0');
+    }
+    update();
+    setInterval(update, 1000);
+  })();
+
+  // ========== STICKY CTA ==========
+  (function() {
+    const sticky = document.getElementById('sticky-cta');
+    const hero = document.querySelector('.hero');
+    window.addEventListener('scroll', () => {
+      const heroBottom = hero.offsetTop + hero.offsetHeight;
+      if (window.scrollY > heroBottom) {
+        sticky.classList.add('show');
+      } else {
+        sticky.classList.remove('show');
+      }
+    }, { passive: true });
+  })();
+
+  // ========== SCROLL REVEAL ==========
+  (function() {
+    const elements = document.querySelectorAll('.feature-card, .price-card, .testimonial, .faq-item, .compare-card, .step, .selection');
+    elements.forEach(el => el.classList.add('reveal'));
+
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    elements.forEach(el => obs.observe(el));
+  })();
+
+  // ========== LIVE NOTIFICATIONS ==========
+  (function() {
+    const notifs = [
+      { name: 'João de SP', letter: 'J', action: 'Comprou o Pack Copa' },
+      { name: 'Matheus do RJ', letter: 'M', action: 'Comprou o Básico' },
+      { name: 'Lucas de BH', letter: 'L', action: 'Comprou o Pack Copa' },
+      { name: 'Gabriel de Salvador', letter: 'G', action: 'Comprou o Pack Copa' },
+      { name: 'Rafael de Fortaleza', letter: 'R', action: 'Comprou o Básico' },
+      { name: 'Pedro de Curitiba', letter: 'P', action: 'Comprou o Pack Copa' },
+      { name: 'Thiago de Manaus', letter: 'T', action: 'Comprou o Pack Copa' },
+      { name: 'Vinicius de Recife', letter: 'V', action: 'Comprou o Básico' },
+      { name: 'Felipe de POA', letter: 'F', action: 'Comprou o Pack Copa' }
+    ];
+    const el = document.getElementById('live-notif');
+    const name = document.getElementById('notif-name');
+    const avatar = document.getElementById('notif-avatar');
+    const action = el.querySelector('.action');
+
+    let i = 0;
+    function showNext() {
+      const n = notifs[i % notifs.length];
+      name.textContent = n.name;
+      avatar.textContent = n.letter;
+      action.innerHTML = n.action + ' · <strong>agora</strong>';
+      el.classList.add('show');
+      setTimeout(() => {
+        el.classList.remove('show');
+      }, 4500);
+      i++;
+    }
+
+    // Primeira aparição após 8s
+    setTimeout(() => {
+      showNext();
+      // Depois a cada 15s
+      setInterval(showNext, 15000);
+    }, 8000);
+  })();
+
+  // ========== CTA TRACKING (Facebook Pixel ready) ==========
+  document.querySelectorAll('[data-cta]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const ctaId = btn.dataset.cta;
+      const price = btn.dataset.price;
+      if (typeof fbq !== 'undefined') {
+        if (price) {
+          fbq('track', 'InitiateCheckout', { value: parseFloat(price), currency: 'BRL', content_name: ctaId });
+        } else {
+          fbq('track', 'Lead', { content_name: ctaId });
+        }
+      }
+      console.log('[CTA Click]', ctaId, price ? `R$ ${price}` : '');
+    });
+  });
+</script>
+
+</body>
+</html>
