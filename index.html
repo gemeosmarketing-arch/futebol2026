@@ -3,7 +3,27 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-<title>NOVO DFL 2026 — Jogue a COPA DO MUNDO 2026 no seu Celular | Link Direto Sem Encurtador</title>
+
+<!-- Utmify UTMs -->
+<script
+    src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+    data-utmify-prevent-xcod-sck
+    data-utmify-prevent-subids
+    async
+    defer
+  ></script>
+
+<!-- Utmify Pixel -->
+<script>
+  window.pixelId = "69e2d3d767da7c14fbf53111";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
+
+<title>NOVO DFL 2026</title>
 <meta name="description" content="Jogue a Copa do Mundo 2026 com todas as seleções e elencos atualizados! Link direto, SEM encurtador, SEM anúncio. Brasileirão + Ligas Europeias. Baixe agora por R$ 5." />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,15 +71,16 @@
     background: linear-gradient(90deg, var(--gold) 0%, #FFA500 50%, var(--gold) 100%);
     color: var(--black);
     text-align: center;
-    padding: 10px 16px;
+    padding: 6px 16px;
     font-weight: 800;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.02em;
     position: sticky;
     top: 0;
     z-index: 100;
     overflow: hidden;
-    border-bottom: 2px solid rgba(0,0,0,0.2);
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    line-height: 1.3;
   }
   .announce-scroll {
     display: inline-block;
@@ -77,6 +98,7 @@
     position: relative;
     padding: 28px 0 40px;
     overflow: hidden;
+    text-align: center;
     background:
       radial-gradient(ellipse 90% 60% at 50% 0%, rgba(255, 215, 0, 0.12), transparent 70%),
       radial-gradient(ellipse 70% 50% at 50% 40%, rgba(0, 230, 118, 0.15), transparent 70%),
@@ -126,10 +148,11 @@
   h1.hero-title {
     font-family: 'Archivo Black', sans-serif;
     font-style: italic;
-    font-size: clamp(36px, 11vw, 54px);
-    line-height: 0.92;
+    font-size: clamp(34px, 10vw, 50px);
+    line-height: 0.95;
     letter-spacing: -0.03em;
-    margin-bottom: 14px;
+    margin-bottom: 24px;
+    text-align: center;
   }
   h1.hero-title .gold {
     background: linear-gradient(180deg, #FFE55C 0%, #FFD700 50%, #DAA520 100%);
@@ -144,8 +167,9 @@
   .hero-sub {
     font-size: 16px;
     color: var(--text-dim);
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
     max-width: 95%;
+    text-align: center;
   }
   .hero-sub strong { color: var(--text); font-weight: 700; }
   .hero-sub .highlight-gold { color: var(--gold); font-weight: 800; }
@@ -172,12 +196,14 @@
   .social-inline {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 12px;
-    margin-bottom: 24px;
+    margin: 0 auto 24px;
     padding: 12px 14px;
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 14px;
+    max-width: fit-content;
   }
   .avatars { display: flex; }
   .avatars .av {
@@ -194,7 +220,7 @@
   .av-2 { background: linear-gradient(135deg, #FFD700, #FFA500); }
   .av-3 { background: linear-gradient(135deg, #002776, #1565C0); }
   .av-4 { background: linear-gradient(135deg, #FF6B35, #C70039); }
-  .social-text { font-size: 12px; color: var(--text-dim); line-height: 1.3; }
+  .social-text { font-size: 12px; color: var(--text-dim); line-height: 1.3; text-align: left; }
   .social-text strong { color: var(--text); display: block; font-size: 13px; }
   .stars { color: var(--gold); font-size: 11px; letter-spacing: 2px; }
 
@@ -685,6 +711,7 @@
     border-radius: 20px;
     padding: 28px 22px;
     position: relative;
+    text-align: center;
     transition: transform 0.3s ease;
   }
   .price-card.popular {
@@ -711,6 +738,7 @@
   .price-header {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     margin-bottom: 16px;
   }
@@ -724,6 +752,7 @@
   .price-big {
     display: flex;
     align-items: baseline;
+    justify-content: center;
     gap: 4px;
     margin-bottom: 4px;
   }
@@ -750,22 +779,24 @@
     font-size: 13px;
     color: var(--text-dim);
     margin-bottom: 20px;
+    text-align: center;
   }
   .price-caption .save { color: var(--green); font-weight: 800; }
   .price-card.popular .price-caption .save { color: var(--gold); }
   .price-features { list-style: none; margin-bottom: 24px; }
   .price-features li {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     padding: 8px 0;
     font-size: 14px;
     color: var(--text-dim);
     line-height: 1.4;
+    text-align: center;
   }
-  .price-features li svg { color: var(--green); flex-shrink: 0; margin-top: 2px; }
+  .price-features li svg { color: var(--green); flex-shrink: 0; }
   .price-card.popular .price-features li svg { color: var(--gold); }
-  .price-features li strong { color: white; font-weight: 700; }
   .price-features li.hot {
     background: rgba(255, 215, 0, 0.06);
     margin: 4px -10px;
@@ -795,6 +826,28 @@
     box-shadow: 0 10px 25px rgba(255, 215, 0, 0.3);
   }
   .price-cta:active { transform: scale(0.98); }
+
+  .trust-badges {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 14px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .trust-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: var(--text-dim);
+    font-weight: 600;
+    white-space: nowrap;
+  }
+  .trust-item svg { color: var(--green); flex-shrink: 0; }
+  .price-card.popular .trust-item svg { color: var(--gold); }
 
   .secure-line {
     display: flex;
@@ -864,18 +917,35 @@
   .guarantee h3 { font-size: 18px; font-weight: 800; margin-bottom: 6px; color: white; }
   .guarantee p { font-size: 13px; color: var(--text-dim); line-height: 1.5; }
 
-  /* ========== TESTIMONIALS ========== */
-  .testimonials-grid { display: flex; flex-direction: column; gap: 14px; }
+  /* ========== TESTIMONIALS CAROUSEL ========== */
+  .testimonials-carousel {
+    position: relative;
+    overflow: hidden;
+    margin: 0 -20px;
+    padding: 0 20px;
+  }
+  .testimonials-track {
+    display: flex;
+    gap: 14px;
+    transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+    will-change: transform;
+    touch-action: pan-y;
+  }
+  .testimonials-track .testimonial {
+    flex: 0 0 100%;
+    min-width: 0;
+    scroll-snap-align: center;
+  }
   .testimonial {
     background: var(--bg-card);
     border: 1px solid var(--border);
     border-radius: 16px;
-    padding: 20px;
+    padding: 22px;
     position: relative;
   }
   .testimonial-stars {
     color: var(--gold);
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     font-size: 14px;
     letter-spacing: 2px;
   }
@@ -883,12 +953,13 @@
     font-style: italic;
     font-size: 14px;
     color: white;
-    line-height: 1.5;
-    margin-bottom: 14px;
+    line-height: 1.55;
+    margin-bottom: 16px;
+    min-height: 80px;
   }
   .testimonial-author { display: flex; align-items: center; gap: 10px; }
   .testimonial-avatar {
-    width: 36px; height: 36px;
+    width: 38px; height: 38px;
     border-radius: 50%;
     background: rgba(0, 230, 118, 0.15);
     border: 1px solid var(--border-green);
@@ -909,6 +980,57 @@
     align-items: center;
     gap: 4px;
     margin-top: 2px;
+  }
+
+  .carousel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 22px;
+  }
+  .carousel-btn {
+    width: 38px; height: 38px;
+    border-radius: 50%;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .carousel-btn:hover, .carousel-btn:active {
+    background: var(--green);
+    color: var(--black);
+    border-color: var(--green);
+  }
+  .carousel-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: var(--bg-card);
+    color: white;
+  }
+  .carousel-dots {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+  .carousel-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--border);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .carousel-dot.active {
+    width: 24px;
+    border-radius: 4px;
+    background: var(--green);
   }
 
   /* ========== TUTORIAL STEPS ========== */
@@ -1033,86 +1155,9 @@
     line-height: 1.5;
   }
 
-  /* ========== STICKY CTA ========== */
-  .sticky-cta {
-    position: fixed;
-    bottom: 0; left: 0; right: 0;
-    background: rgba(10, 10, 10, 0.95);
-    backdrop-filter: blur(12px);
-    border-top: 1px solid var(--border);
-    padding: 12px 16px;
-    z-index: 99;
-    display: none;
-    align-items: center;
-    gap: 12px;
-  }
-  .sticky-cta.show { display: flex; animation: slide-up 0.3s ease; }
-  @keyframes slide-up { from { transform: translateY(100%); } to { transform: translateY(0); } }
-  .sticky-info { flex: 1; }
-  .sticky-info .s1 {
-    font-size: 11px;
-    color: var(--gold);
-    font-weight: 800;
-    letter-spacing: 1px;
-  }
-  .sticky-info .s2 { font-size: 14px; color: white; font-weight: 800; }
-  .sticky-info .s2 .old {
-    color: var(--text-dimmer);
-    text-decoration: line-through;
-    font-size: 12px;
-    margin-left: 4px;
-    font-weight: 500;
-  }
-  .sticky-cta .btn {
-    background: linear-gradient(135deg, var(--green), #00C853);
-    color: var(--black);
-    font-family: 'Archivo Black', sans-serif;
-    font-style: italic;
-    font-size: 13px;
-    padding: 12px 18px;
-    border-radius: 10px;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
   /* ========== SCROLL REVEAL ========== */
   .reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
-
-  /* ========== LIVE NOTIFICATIONS ========== */
-  .live-notification {
-    position: fixed;
-    bottom: 80px;
-    left: 12px;
-    max-width: 280px;
-    background: var(--bg-card);
-    border: 1px solid var(--border-green);
-    border-radius: 14px;
-    padding: 12px 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    z-index: 98;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-    transform: translateX(-120%);
-    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
-  }
-  .live-notification.show { transform: translateX(0); }
-  .live-notification .avatar {
-    width: 36px; height: 36px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--green), var(--green-dark));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: 800;
-    font-size: 14px;
-    flex-shrink: 0;
-  }
-  .live-notification .info .name { font-size: 13px; font-weight: 700; color: white; }
-  .live-notification .info .action { font-size: 11px; color: var(--text-dim); margin-top: 2px; }
-  .live-notification .info .action strong { color: var(--green); }
 
   @media (min-width: 481px) {
     .hero { padding: 40px 0 56px; }
@@ -1142,19 +1187,10 @@
     </div>
 
     <h1 class="hero-title">
-      JOGUE A
-      <span class="gold">COPA DO MUNDO</span>
+      NOVO DFL 2026
+      <span class="gold">JOGUE A COPA DO MUNDO</span>
       <span class="green">NO SEU CELULAR</span>
     </h1>
-
-    <p class="hero-sub">
-      Todas as <strong>32 seleções</strong> com elencos <span class="highlight-gold">ATUALIZADOS 2026</span> — <strong>Brasil, Argentina, França, Portugal</strong> e todas as estrelas do mundo. Bora levantar a taça pro Brasil no seu Android?
-    </p>
-
-    <div class="anti-shortener">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
-      <s>encurtador</s> • <s>anúncio</s> • <span class="yes">LINK DIRETO</span>
-    </div>
 
     <!-- Social -->
     <div class="social-inline">
@@ -1245,26 +1281,13 @@
 
     <!-- CTA principal -->
     <a href="#ofertas" class="cta-primary" data-cta="hero">
-      QUERO JOGAR A COPA AGORA
+      BAIXAR AGORA
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-        <polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/>
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
       </svg>
     </a>
-
-    <div class="cta-meta">
-      <div class="cta-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-        Acesso Vitalício
-      </div>
-      <div class="cta-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
-        Sem Anúncios
-      </div>
-      <div class="cta-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        Entrega Imediata
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1272,7 +1295,7 @@
 <div class="urgency-bar">
   <div class="urgency-title">
     <span class="live-dot"></span>
-    ⚠ PROMOÇÃO COPA — EXPIRA EM
+    ⚠ PROMOÇÃO EXPIRA EM:
   </div>
   <div class="timer" id="timer">
     <div class="timer-unit"><span id="hours">02</span><small>HORAS</small></div>
@@ -1419,8 +1442,8 @@
         <div class="feature-icon bolt">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
         </div>
-        <h3>Instalação Automática</h3>
-        <p>Esqueça copiar pasta /data manualmente. Nosso instalador faz tudo sozinho em 3 cliques — sem erro, sem zArchiver, sem dor de cabeça.</p>
+        <h3>Instalação Fácil</h3>
+        <p>Acesse o link para instalar enviado no email e assista o vídeo tutorial rápido ensinando como você pode instalar.</p>
       </div>
     </div>
   </div>
@@ -1434,7 +1457,12 @@
     <p>Aqui o papo é outro. Por <span class="price-highlight">R$ 5,00</span> (menos que uma coxinha), você recebe o <strong>link direto no e-mail</strong>, baixa em 2 minutos e sai jogando a Copa do Mundo 2026 com o Brasil.</p>
 
     <a href="#ofertas" class="cta-black" data-cta="push">
-      VER OFERTA ESPECIAL 🚀
+      BAIXAR AGORA
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
     </a>
   </div>
 </section>
@@ -1491,56 +1519,73 @@
           <span class="amount">5</span>
           <span class="original">R$ 10</span>
         </div>
-        <div class="price-caption">Pagamento único · <span class="save">50% OFF hoje</span></div>
+        <div class="price-caption">Pagamento único · <span class="save">50% Desconto</span></div>
 
         <ul class="price-features">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>APK + DATA + OBB</strong> (completo)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>DFL 2026 Completo</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Brasileirão Série A e B 2026</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Kits e uniformes 2026</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Narração em Português BR</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tutorial em vídeo passo a passo</span></li>
         </ul>
 
-        <a href="#" class="price-cta" data-cta="basico" data-price="5">COMPRAR — R$ 5,00</a>
+        <a href="https://pay.kirvano.com/b49bf46e-69fd-4adb-b118-3343bb1cefb9" target="_blank" rel="noopener" class="price-cta" data-cta="basico" data-price="5">QUERO O DFL BÁSICO</a>
+
+        <div class="trust-badges">
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Compra segura
+          </div>
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            7 dias de garantia
+          </div>
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Sem mensalidade
+          </div>
+        </div>
       </div>
 
-      <!-- PACK COPA -->
+      <!-- PACK COMPLETO -->
       <div class="price-card popular">
-        <div class="popular-badge">🏆 EDIÇÃO COPA · MAIS VENDIDO</div>
+        <div class="popular-badge">🏆 MAIS VENDIDO</div>
         <div class="price-header">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFD700" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
-          <span class="tier">PACK COPA COMPLETO</span>
+          <span class="tier">COMPLETO</span>
         </div>
         <div class="price-big">
           <span class="currency">R$</span>
           <span class="amount">10</span>
-          <span class="original">R$ 27</span>
+          <span class="original">R$ 30</span>
         </div>
-        <div class="price-caption">Pagamento único · <span class="save">Vitalício · 63% OFF</span></div>
+        <div class="price-caption">Pagamento único · <span class="save">66% Desconto</span></div>
 
         <ul class="price-features">
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Tudo da oferta básica</strong></span></li>
-          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🏆 <strong>Modo Copa do Mundo 2026</strong> com 32 seleções</span></li>
-          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🌍 <strong>Todas as ligas do mundo</strong> (Premier, La Liga, Bundesliga, Serie A, Ligue 1)</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Atualizações vitalícias</strong> (elencos + kits)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tudo do kit básico</span></li>
+          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🏆 Copa do Mundo 2026 com 32 seleções</span></li>
+          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🌍 Todas as ligas do mundo (Premier, La Liga, Bundesliga, Serie A, Ligue 1)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Atualizações vitalícias (elencos + kits)</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Estádios brasileiros e da Copa em HD</span></li>
-          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><strong>Suporte prioritário</strong> por WhatsApp</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Suporte prioritário por WhatsApp</span></li>
         </ul>
 
-        <a href="#" class="price-cta" data-cta="completo" data-price="10">QUERO O PACK COMPLETO — R$ 10</a>
+        <a href="https://pay.kirvano.com/8c3a9a8d-d658-4c51-a651-d9283ae8afcb" target="_blank" rel="noopener" class="price-cta" data-cta="completo" data-price="10">QUERO O DFL COMPLETO</a>
+
+        <div class="trust-badges">
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Compra segura
+          </div>
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+            7 dias de garantia
+          </div>
+          <div class="trust-item">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            Sem mensalidade
+          </div>
+        </div>
       </div>
-    </div>
-
-    <div class="secure-line">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-      COMPRA 100% SEGURA · ENTREGA IMEDIATA
-    </div>
-
-    <div class="payment-methods">
-      <div class="pay-method">PIX</div>
-      <div class="pay-method">CARTÃO</div>
-      <div class="pay-method">BOLETO</div>
-      <div class="pay-method">GOOGLE PAY</div>
     </div>
 
     <!-- GARANTIA -->
@@ -1548,7 +1593,7 @@
       <div class="guarantee-seal">GARANTIA<br>7 DIAS</div>
       <div>
         <h3>Garantia Total de 7 Dias</h3>
-        <p>Se por qualquer motivo não funcionar no seu celular ou você não gostar, devolvemos <strong style="color:var(--green)">100% do seu dinheiro</strong>. Sem perguntas, sem burocracia. Seu risco é zero.</p>
+        <p>Comprou, testou e não gostou? É só pedir reembolso dentro de 7 dias. Devolvemos <strong style="color:var(--green)">100% do seu dinheiro</strong>.</p>
       </div>
     </div>
   </div>
@@ -1561,80 +1606,92 @@
     <h2 class="section-title">QUEM BAIXOU <span class="green">APROVOU</span></h2>
     <p class="section-sub">Veja o que a galera que já comprou tá falando.</p>
 
-    <div class="testimonials-grid">
-      <div class="testimonial">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p>"Mano deu muito certo, muito obrigado! Meu sonho era jogar esse jogasso no celular e agora eu posso aproveitar ele 😊 Copa do Mundo zerada com o Brasil!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">S</div>
-          <div class="testimonial-meta">
-            <div class="testimonial-name">Sep.Editss</div>
-            <div class="verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
-              Compra verificada
+    <div class="testimonials-carousel">
+      <div class="testimonials-track" id="testimonials-track">
+        <div class="testimonial">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>"Mano deu muito certo, muito obrigado! Meu sonho era jogar esse jogasso no celular e agora eu posso aproveitar ele 😊 Copa do Mundo zerada com o Brasil!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Sep.Editss</div>
+              <div class="verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+                Compra verificada
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>"Jogo muito bom, bem atualizadinho, 10000% aprovado ❤️ Instalei em 3 min no meu Moto G8 e já tô jogando a Copa!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">D</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Davizz.RP7</div>
+              <div class="verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+                Compra verificada
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>"Muito bom mesmo. Já tinha instalado num celular antigo A22, agora tô instalando no meu Redmi 11 novo. Jogo TOP, recomendo demais 🤝🔥"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">F</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Fernando Barone</div>
+              <div class="verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+                Compra verificada
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>"Pegaram um FIFA antigo e fizeram uma versão TOP, melhor que muitos jogos da Play Store. E o modo Copa com o Brasil é sensacional!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">Mundo_do_Futebol123</div>
+              <div class="verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+                Compra verificada
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial">
+          <div class="testimonial-stars">★ ★ ★ ★ ★</div>
+          <p>"Baixei aqui, 5 gigas, mas funcionou certinho. Jogo pika demais, tô na fase final da Copa com a Argentina. Vale cada centavo! 👍"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">M</div>
+            <div class="testimonial-meta">
+              <div class="testimonial-name">M. Castrop</div>
+              <div class="verified">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
+                Compra verificada
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="testimonial">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p>"Jogo muito bom, bem atualizadinho, 10000% aprovado ❤️ Instalei em 3 min no meu Moto G8 e já tô jogando a Copa!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">D</div>
-          <div class="testimonial-meta">
-            <div class="testimonial-name">Davizz.RP7</div>
-            <div class="verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
-              Compra verificada
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p>"Muito bom mesmo. Já tinha instalado num celular antigo A22, agora tô instalando no meu Redmi 11 novo. Jogo TOP, recomendo demais 🤝🔥"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">F</div>
-          <div class="testimonial-meta">
-            <div class="testimonial-name">Fernando Barone</div>
-            <div class="verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
-              Compra verificada
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p>"Pegaram um FIFA antigo e fizeram uma versão TOP, melhor que muitos jogos da Play Store. E o modo Copa com o Brasil é sensacional!"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">M</div>
-          <div class="testimonial-meta">
-            <div class="testimonial-name">Mundo_do_Futebol123</div>
-            <div class="verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
-              Compra verificada
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="testimonial">
-        <div class="testimonial-stars">★ ★ ★ ★ ★</div>
-        <p>"Baixei aqui, 5 gigas, mas funcionou certinho. Jogo pika demais, tô na fase final da Copa com a Argentina. Vale cada centavo! 👍"</p>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">M</div>
-          <div class="testimonial-meta">
-            <div class="testimonial-name">M. Castrop</div>
-            <div class="verified">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7l-9-5z"/></svg>
-              Compra verificada
-            </div>
-          </div>
-        </div>
+      <div class="carousel-nav">
+        <button class="carousel-btn" id="prev-btn" aria-label="Anterior">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <div class="carousel-dots" id="carousel-dots"></div>
+        <button class="carousel-btn" id="next-btn" aria-label="Próximo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+        </button>
       </div>
     </div>
   </div>
@@ -1679,92 +1736,18 @@
       </details>
 
       <details class="faq-item">
-        <summary>🏆 O modo Copa do Mundo 2026 vem completo?</summary>
-        <div class="faq-content">Sim! Todas as <strong>32 seleções</strong> classificadas, fase de grupos, oitavas, quartas, semi e final. Estádios oficiais, narração em português e elencos com as convocações atualizadas. Você pode jogar pela seleção que quiser.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>💾 Quanto de espaço preciso?</summary>
-        <div class="faq-content">Aproximadamente <strong>5 GB livres</strong> durante a instalação. Depois de instalado, o jogo ocupa cerca de 3,2 GB no seu celular.</div>
-      </details>
-
-      <details class="faq-item">
         <summary>🎮 Precisa de internet para jogar?</summary>
         <div class="faq-content">Só para baixar. Depois de instalado, roda <strong>100% offline</strong>. Jogue no ônibus, no avião ou no sinal ruim — sem gastar dados móveis.</div>
       </details>
-
-      <details class="faq-item">
-        <summary>🔄 Vou receber atualizações?</summary>
-        <div class="faq-content">No <strong>Básico (R$5)</strong>, você recebe a versão atual completa. No <strong>Pack Copa Completo (R$10)</strong>, você tem acesso vitalício a TODAS as atualizações futuras (elencos, kits, novas ligas) sem pagar nada a mais.</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>💳 Quais formas de pagamento?</summary>
-        <div class="faq-content">PIX (aprovação em segundos), cartão de crédito/débito, boleto e Google Pay. Todo pagamento é processado por gateway seguro (Mercado Pago / Pagar.me).</div>
-      </details>
-
-      <details class="faq-item">
-        <summary>🔙 E se eu não gostar?</summary>
-        <div class="faq-content">Você tem <strong style="color:var(--green)">7 dias de garantia total</strong>. Se não gostar por qualquer motivo (ou não funcionar no seu celular), devolvemos 100% do seu dinheiro. Basta mandar um e-mail. Sem perguntas.</div>
-      </details>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
-<section class="final-cta">
-  <div class="container">
-    <h2>
-      NÃO PERCA A
-      <span class="gold">COPA DO MUNDO</span>
-    </h2>
-    <p>Garanta seu acesso agora por apenas <strong style="color:var(--gold)">R$ 5,00</strong> e leve a seleção brasileira ao hexa no seu celular.</p>
-
-    <a href="#ofertas" class="cta-primary" data-cta="final">
-      QUERO LEVANTAR A TAÇA 🏆
-    </a>
-
-    <div class="cta-meta" style="margin-top: 20px;">
-      <div class="cta-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        Pagamento Seguro
-      </div>
-      <div class="cta-meta-item">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
-        Garantia 7 dias
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============ FOOTER ============ -->
+<!-- ============ FOOTER MÍNIMO ============ -->
 <footer>
   <p style="font-family:'Archivo Black',sans-serif;font-style:italic;color:white;font-size:18px;margin-bottom:8px">DFL<span style="color:var(--green)">2026</span> <span style="color:var(--gold)">🏆</span></p>
-  <p>O melhor futebol mobile do Brasil</p>
-  <p><a href="#">Termos de Uso</a> · <a href="#">Política de Privacidade</a> · <a href="#">Contato</a></p>
-  <p class="disclaimer">
-    Este produto é um mod comunitário não-oficial. Não é afiliado, patrocinado ou endossado pela FIFA, EA Sports, Konami ou qualquer outra entidade oficial. O conteúdo é fornecido para fins educacionais e de entretenimento.
-  </p>
-  <p class="disclaimer" style="margin-top:12px">© 2026 DFL Mobile Brasil · Todos os direitos reservados</p>
+  <p class="disclaimer">© 2026 DFL Mobile Brasil · Todos os direitos reservados</p>
 </footer>
-
-<!-- ============ STICKY CTA ============ -->
-<div class="sticky-cta" id="sticky-cta">
-  <div class="sticky-info">
-    <div class="s1">🏆 EDIÇÃO COPA · OFERTA LIMITADA</div>
-    <div class="s2">R$ 5,00 <span class="old">R$ 10</span></div>
-  </div>
-  <a href="#ofertas" class="btn" data-cta="sticky">BAIXAR →</a>
-</div>
-
-<!-- ============ LIVE NOTIFICATIONS ============ -->
-<div class="live-notification" id="live-notif">
-  <div class="avatar" id="notif-avatar">J</div>
-  <div class="info">
-    <div class="name" id="notif-name">João de SP</div>
-    <div class="action">Comprou o Pack Copa · <strong>agora</strong></div>
-  </div>
-</div>
 
 <script>
   // ========== COUNTDOWN TIMER ==========
@@ -1791,23 +1774,9 @@
     setInterval(update, 1000);
   })();
 
-  // ========== STICKY CTA ==========
-  (function() {
-    const sticky = document.getElementById('sticky-cta');
-    const hero = document.querySelector('.hero');
-    window.addEventListener('scroll', () => {
-      const heroBottom = hero.offsetTop + hero.offsetHeight;
-      if (window.scrollY > heroBottom) {
-        sticky.classList.add('show');
-      } else {
-        sticky.classList.remove('show');
-      }
-    }, { passive: true });
-  })();
-
   // ========== SCROLL REVEAL ==========
   (function() {
-    const elements = document.querySelectorAll('.feature-card, .price-card, .testimonial, .faq-item, .compare-card, .step, .selection');
+    const elements = document.querySelectorAll('.feature-card, .price-card, .faq-item, .compare-card, .step, .selection');
     elements.forEach(el => el.classList.add('reveal'));
 
     const obs = new IntersectionObserver((entries) => {
@@ -1821,43 +1790,67 @@
     elements.forEach(el => obs.observe(el));
   })();
 
-  // ========== LIVE NOTIFICATIONS ==========
+  // ========== TESTIMONIALS CAROUSEL ==========
   (function() {
-    const notifs = [
-      { name: 'João de SP', letter: 'J', action: 'Comprou o Pack Copa' },
-      { name: 'Matheus do RJ', letter: 'M', action: 'Comprou o Básico' },
-      { name: 'Lucas de BH', letter: 'L', action: 'Comprou o Pack Copa' },
-      { name: 'Gabriel de Salvador', letter: 'G', action: 'Comprou o Pack Copa' },
-      { name: 'Rafael de Fortaleza', letter: 'R', action: 'Comprou o Básico' },
-      { name: 'Pedro de Curitiba', letter: 'P', action: 'Comprou o Pack Copa' },
-      { name: 'Thiago de Manaus', letter: 'T', action: 'Comprou o Pack Copa' },
-      { name: 'Vinicius de Recife', letter: 'V', action: 'Comprou o Básico' },
-      { name: 'Felipe de POA', letter: 'F', action: 'Comprou o Pack Copa' }
-    ];
-    const el = document.getElementById('live-notif');
-    const name = document.getElementById('notif-name');
-    const avatar = document.getElementById('notif-avatar');
-    const action = el.querySelector('.action');
+    const track = document.getElementById('testimonials-track');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    const dotsContainer = document.getElementById('carousel-dots');
+    if (!track) return;
 
-    let i = 0;
-    function showNext() {
-      const n = notifs[i % notifs.length];
-      name.textContent = n.name;
-      avatar.textContent = n.letter;
-      action.innerHTML = n.action + ' · <strong>agora</strong>';
-      el.classList.add('show');
-      setTimeout(() => {
-        el.classList.remove('show');
-      }, 4500);
-      i++;
+    const slides = track.querySelectorAll('.testimonial');
+    const total = slides.length;
+    let currentIndex = 0;
+
+    // Criar dots
+    for (let i = 0; i < total; i++) {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.setAttribute('aria-label', 'Ir para depoimento ' + (i + 1));
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
     }
 
-    // Primeira aparição após 8s
-    setTimeout(() => {
-      showNext();
-      // Depois a cada 15s
-      setInterval(showNext, 15000);
-    }, 8000);
+    function update() {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) => {
+        d.classList.toggle('active', i === currentIndex);
+      });
+    }
+
+    function goTo(index) {
+      currentIndex = (index + total) % total;
+      update();
+    }
+
+    prevBtn.addEventListener('click', () => goTo(currentIndex - 1));
+    nextBtn.addEventListener('click', () => goTo(currentIndex + 1));
+
+    // Swipe (touch)
+    let startX = 0;
+    let isSwiping = false;
+    track.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      isSwiping = true;
+    }, { passive: true });
+    track.addEventListener('touchmove', (e) => {
+      if (!isSwiping) return;
+    }, { passive: true });
+    track.addEventListener('touchend', (e) => {
+      if (!isSwiping) return;
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) goTo(currentIndex + 1);
+        else goTo(currentIndex - 1);
+      }
+      isSwiping = false;
+    }, { passive: true });
+
+    // Auto-play
+    let autoPlay = setInterval(() => goTo(currentIndex + 1), 6000);
+    track.addEventListener('touchstart', () => { clearInterval(autoPlay); }, { passive: true });
+    [prevBtn, nextBtn].forEach(btn => btn.addEventListener('click', () => { clearInterval(autoPlay); }));
   })();
 
   // ========== CTA TRACKING (Facebook Pixel ready) ==========
