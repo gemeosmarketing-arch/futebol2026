@@ -71,9 +71,9 @@
     background: linear-gradient(90deg, var(--gold) 0%, #FFA500 50%, var(--gold) 100%);
     color: var(--black);
     text-align: center;
-    padding: 6px 16px;
+    padding: 4px 12px;
     font-weight: 800;
-    font-size: 12px;
+    font-size: 10px;
     letter-spacing: 0.02em;
     position: sticky;
     top: 0;
@@ -148,10 +148,10 @@
   h1.hero-title {
     font-family: 'Archivo Black', sans-serif;
     font-style: italic;
-    font-size: clamp(34px, 10vw, 50px);
+    font-size: clamp(26px, 7.5vw, 38px);
     line-height: 0.95;
     letter-spacing: -0.03em;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
     text-align: center;
   }
   h1.hero-title .gold {
@@ -224,95 +224,30 @@
   .social-text strong { color: var(--text); display: block; font-size: 13px; }
   .stars { color: var(--gold); font-size: 11px; letter-spacing: 2px; }
 
-  /* TROFÉU DA COPA NO HERO */
-  .trophy-hero {
+  /* VÍDEO DO HERO */
+  .hero-video {
     position: relative;
     width: 100%;
     max-width: 320px;
-    margin: 0 auto 28px;
+    margin: 0 auto 24px;
     aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .trophy-hero::before {
-    content: '';
-    position: absolute;
-    width: 280px; height: 280px;
-    background: radial-gradient(circle, var(--gold-glow) 0%, transparent 60%);
-    filter: blur(20px);
-    animation: glow-pulse 3s ease-in-out infinite;
-  }
-  @keyframes glow-pulse {
-    0%, 100% { opacity: 0.6; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.1); }
-  }
-
-  /* Stadium background on trophy */
-  .trophy-bg {
-    position: absolute;
-    width: 100%; height: 100%;
-    border-radius: 50%;
-    background:
-      radial-gradient(ellipse at center bottom, rgba(0, 230, 118, 0.15), transparent 60%),
-      repeating-linear-gradient(90deg, transparent 0 15px, rgba(0, 230, 118, 0.06) 15px 16px);
-    border: 1px solid var(--border);
+    border-radius: 16px;
     overflow: hidden;
+    background: #000;
+    box-shadow:
+      0 0 60px rgba(0, 230, 118, 0.25),
+      0 20px 40px rgba(0,0,0,0.4);
+    border: 1px solid var(--border-green);
   }
-  .trophy-bg::after {
-    content: '';
+  .hero-video iframe {
     position: absolute;
-    bottom: 20%; left: 50%;
-    transform: translateX(-50%);
-    width: 60%; height: 40%;
-    border: 1px solid rgba(0, 230, 118, 0.3);
-    border-bottom: none;
-    border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  }
-
-  /* SVG Trophy */
-  .trophy-svg {
-    position: relative;
-    width: 180px;
-    height: 220px;
-    z-index: 2;
-    animation: float 4s ease-in-out infinite;
-    filter: drop-shadow(0 20px 40px rgba(255, 215, 0, 0.4));
-  }
-  @keyframes float {
-    0%, 100% { transform: translateY(0) rotate(-2deg); }
-    50% { transform: translateY(-8px) rotate(2deg); }
-  }
-
-  /* Sparkles */
-  .sparkle {
-    position: absolute;
-    width: 8px; height: 8px;
-    background: var(--gold);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--gold);
-    animation: sparkle 2s ease-in-out infinite;
-  }
-  .sparkle:nth-child(1) { top: 20%; left: 15%; animation-delay: 0s; }
-  .sparkle:nth-child(2) { top: 30%; right: 12%; animation-delay: 0.4s; }
-  .sparkle:nth-child(3) { bottom: 30%; left: 10%; animation-delay: 0.8s; }
-  .sparkle:nth-child(4) { top: 50%; right: 18%; animation-delay: 1.2s; width: 6px; height: 6px; }
-  .sparkle:nth-child(5) { bottom: 25%; right: 25%; animation-delay: 1.6s; width: 5px; height: 5px; }
-  @keyframes sparkle {
-    0%, 100% { opacity: 0; transform: scale(0); }
-    50% { opacity: 1; transform: scale(1); }
-  }
-
-  /* Flags flying */
-  .flags-flying {
-    position: absolute;
-    display: flex;
-    gap: 8px;
-    bottom: 10%;
-    justify-content: center;
+    inset: 0;
     width: 100%;
-    z-index: 3;
+    height: 100%;
+    border: 0;
   }
+
+  /* Flags (usadas também na seção 32 seleções) */
   .mini-flag {
     width: 26px; height: 18px;
     border-radius: 2px;
@@ -443,6 +378,7 @@
 
   /* ========== SECTIONS ========== */
   section { padding: 56px 0; position: relative; }
+  section.no-top-padding { padding-top: 24px; }
   .section-eyebrow {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 13px;
@@ -696,7 +632,7 @@
   .cta-black:active { transform: scale(0.98); }
 
   /* ========== PRICING ========== */
-  .pricing { background: var(--bg); padding: 56px 0 48px; }
+  .pricing { background: var(--bg); padding: 56px 0 24px; }
   .price-divider {
     width: 80px; height: 3px;
     background: var(--green);
@@ -787,22 +723,15 @@
   .price-features li {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
     padding: 8px 0;
     font-size: 14px;
     color: var(--text-dim);
     line-height: 1.4;
-    text-align: center;
+    text-align: left;
   }
   .price-features li svg { color: var(--green); flex-shrink: 0; }
   .price-card.popular .price-features li svg { color: var(--gold); }
-  .price-features li.hot {
-    background: rgba(255, 215, 0, 0.06);
-    margin: 4px -10px;
-    padding: 8px 10px;
-    border-radius: 8px;
-  }
   .price-cta {
     display: block;
     width: 100%;
@@ -883,7 +812,7 @@
     border: 1px solid var(--border-green);
     border-radius: 20px;
     padding: 28px 22px;
-    margin: 40px 0;
+    margin: 30px 0 0;
     display: flex;
     gap: 16px;
     align-items: flex-start;
@@ -1206,77 +1135,16 @@
       </div>
     </div>
 
-    <!-- TROFÉU DA COPA -->
-    <div class="trophy-hero">
-      <div class="trophy-bg"></div>
-      <span class="sparkle"></span>
-      <span class="sparkle"></span>
-      <span class="sparkle"></span>
-      <span class="sparkle"></span>
-      <span class="sparkle"></span>
-
-      <svg class="trophy-svg" viewBox="0 0 200 240" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <linearGradient id="gold-grad" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#FFE55C"/>
-            <stop offset="35%" style="stop-color:#FFD700"/>
-            <stop offset="70%" style="stop-color:#DAA520"/>
-            <stop offset="100%" style="stop-color:#B8860B"/>
-          </linearGradient>
-          <linearGradient id="gold-shine" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" style="stop-color:#FFF59D;stop-opacity:0.8"/>
-            <stop offset="50%" style="stop-color:#FFD700;stop-opacity:0"/>
-            <stop offset="100%" style="stop-color:#DAA520;stop-opacity:0.4"/>
-          </linearGradient>
-          <radialGradient id="globe-grad">
-            <stop offset="0%" style="stop-color:#FFE55C"/>
-            <stop offset="100%" style="stop-color:#B8860B"/>
-          </radialGradient>
-        </defs>
-
-        <!-- Base/Pedestal -->
-        <rect x="60" y="200" width="80" height="20" rx="3" fill="url(#gold-grad)" stroke="#8B6914" stroke-width="1"/>
-        <rect x="55" y="195" width="90" height="8" rx="2" fill="url(#gold-grad)"/>
-        <rect x="65" y="180" width="70" height="18" fill="url(#gold-grad)" stroke="#8B6914" stroke-width="0.5"/>
-
-        <!-- Columns/Stem going up -->
-        <path d="M 70 180 Q 75 140 90 120 L 90 100" stroke="url(#gold-grad)" stroke-width="6" fill="none"/>
-        <path d="M 130 180 Q 125 140 110 120 L 110 100" stroke="url(#gold-grad)" stroke-width="6" fill="none"/>
-
-        <!-- Twisted middle -->
-        <ellipse cx="100" cy="130" rx="18" ry="6" fill="url(#gold-grad)" opacity="0.6"/>
-
-        <!-- Globe -->
-        <circle cx="100" cy="75" r="42" fill="url(#globe-grad)" stroke="#8B6914" stroke-width="1"/>
-
-        <!-- Globe continent details -->
-        <path d="M 75 65 Q 85 55 95 62 Q 100 70 90 78 Q 80 82 75 70 Z" fill="#B8860B" opacity="0.6"/>
-        <path d="M 110 60 Q 125 55 125 75 Q 118 85 105 80 Q 102 70 110 60 Z" fill="#B8860B" opacity="0.6"/>
-        <path d="M 90 85 Q 105 90 115 95 Q 105 105 92 100 Z" fill="#B8860B" opacity="0.5"/>
-
-        <!-- Meridians/Parallels -->
-        <ellipse cx="100" cy="75" rx="42" ry="15" fill="none" stroke="#8B6914" stroke-width="0.5" opacity="0.5"/>
-        <ellipse cx="100" cy="75" rx="20" ry="42" fill="none" stroke="#8B6914" stroke-width="0.5" opacity="0.5"/>
-        <ellipse cx="100" cy="75" rx="42" ry="30" fill="none" stroke="#8B6914" stroke-width="0.3" opacity="0.4"/>
-
-        <!-- Highlight -->
-        <ellipse cx="85" cy="55" rx="12" ry="8" fill="#FFF59D" opacity="0.5"/>
-
-        <!-- Top accent -->
-        <circle cx="100" cy="30" r="4" fill="url(#gold-grad)"/>
-
-        <!-- "FIFA 2026" label on base -->
-        <text x="100" y="213" font-family="Archivo Black, sans-serif" font-size="8" fill="#2a1a00" text-anchor="middle" font-weight="900">COPA 2026</text>
-      </svg>
-
-      <!-- Bandeirinhas voando -->
-      <div class="flags-flying">
-        <div class="mini-flag flag-br"></div>
-        <div class="mini-flag flag-ar"></div>
-        <div class="mini-flag flag-fr"></div>
-        <div class="mini-flag flag-pt"></div>
-        <div class="mini-flag flag-de"></div>
-      </div>
+    <!-- VÍDEO DO HERO -->
+    <div class="hero-video">
+      <iframe
+        src="https://app.litevideo.net/embed/e634320d-da8c-4703-8c97-b6f4167ef93e?ar=square&sc=0&st=0&ap=1&lp=0&pe=2x&ph=8&pi=square"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+        title="DFL 2026 Preview"
+      ></iframe>
     </div>
 
     <!-- CTA principal -->
@@ -1402,8 +1270,8 @@
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
         </div>
         <span class="tag">⭐ DESTAQUE 2026</span>
-        <h3>Modo Copa do Mundo 2026</h3>
-        <p>Todas as 32 seleções com elencos atualizados, estádios da Copa, fase de grupos, mata-mata até a final. Leve o Brasil ao hexa no seu celular.</p>
+        <h3>Copa do Mundo 2026</h3>
+        <p>Todas as 32 seleções com elencos atualizados, jogue com os times da Copa do Mundo de 2026 e se divirta.</p>
       </div>
 
       <div class="feature-card">
@@ -1478,22 +1346,22 @@
       <div class="step">
         <div class="step-number">1</div>
         <div>
-          <h4>Escolha seu pack e pague</h4>
-          <p>PIX aprovado na hora, cartão em 2 minutos. Pagamento 100% seguro via gateway oficial.</p>
+          <h4>Escolha seu kit</h4>
+          <p>Após a escolha do seu kit e a confirmação do pagamento, verifique o seu email.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-number">2</div>
         <div>
           <h4>Link direto no seu e-mail</h4>
-          <p>Nada de encurtador. Você recebe o link direto do Google Drive e um tutorial em vídeo de 2 minutos.</p>
+          <p>Acesse o link do DFL 2026 sem encurtador no seu email e um tutorial em vídeo.</p>
         </div>
       </div>
       <div class="step">
         <div class="step-number">3</div>
         <div>
           <h4>Baixe, instale e jogue</h4>
-          <p>Instalador automático. Não precisa copiar pasta /data manualmente. Em 3 minutos você tá na final da Copa.</p>
+          <p>Faça o download e desfrute do seu novo DFL 2026.</p>
         </div>
       </div>
     </div>
@@ -1562,8 +1430,8 @@
 
         <ul class="price-features">
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tudo do kit básico</span></li>
-          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🏆 Copa do Mundo 2026 com 32 seleções</span></li>
-          <li class="hot"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>🌍 Todas as ligas do mundo (Premier, La Liga, Bundesliga, Serie A, Ligue 1)</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Copa do Mundo 2026 com 32 seleções</span></li>
+          <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>As principais ligas do mundo</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Atualizações vitalícias (elencos + kits)</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Estádios brasileiros e da Copa em HD</span></li>
           <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Suporte prioritário por WhatsApp</span></li>
@@ -1600,7 +1468,7 @@
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section>
+<section class="no-top-padding">
   <div class="container">
     <div class="section-eyebrow">DEPOIMENTOS REAIS</div>
     <h2 class="section-title">QUEM BAIXOU <span class="green">APROVOU</span></h2>
