@@ -1222,21 +1222,20 @@
         src="https://i.imgur.com/X3YETAI.mp4"
         playsinline
         muted
-        autoplay
         loop
-        preload="auto"
+        preload="metadata"
       ></video>
 
-      <!-- Overlay de play (quando pausado) -->
-      <div class="video-overlay" id="videoOverlay">
-        <div class="video-play-btn" aria-label="Assistir novamente">
+      <!-- Overlay de play (mostrado inicialmente e quando pausado/finalizado) -->
+      <div class="video-overlay show" id="videoOverlay">
+        <div class="video-play-btn" aria-label="Assistir vídeo">
           <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M8 5v14l11-7z"/>
           </svg>
         </div>
         <div class="video-overlay-text" id="videoOverlayText">
-          <strong>Vídeo finalizado</strong>
-          <span>Clique para assistir novamente</span>
+          <strong>Toque para assistir</strong>
+          <span>Veja como funciona o DFL 2026</span>
         </div>
       </div>
 
@@ -1727,6 +1726,7 @@
     const progressBar = document.getElementById('videoProgressBar');
     if (!video || !wrapper) return;
 
+    let hasStarted = false;
     let hasEnded = false;
 
     // Atualizar barra de progresso
@@ -1739,8 +1739,8 @@
 
     // Quando o vídeo é pausado manualmente
     video.addEventListener('pause', () => {
-      if (!video.ended && video.currentTime > 0) {
-        overlayText.innerHTML = '<strong>Vídeo pausado</strong><span>Clique para continuar</span>';
+      if (!video.ended && video.currentTime > 0 && hasStarted) {
+        overlayText.innerHTML = '<strong>Vídeo pausado</strong><span>Toque para continuar</span>';
         overlay.classList.add('show');
       }
     });
@@ -1754,38 +1754,40 @@
     // Quando termina — mostra overlay de "finalizado"
     video.addEventListener('ended', () => {
       hasEnded = true;
-      overlayText.innerHTML = '<strong>Vídeo finalizado</strong><span>Clique para assistir novamente</span>';
+      overlayText.innerHTML = '<strong>Vídeo finalizado</strong><span>Toque para assistir novamente</span>';
       overlay.classList.add('show');
       progressBar.style.width = '100%';
     });
 
-    // Clique no wrapper: pausa / retoma / reinicia
-    wrapper.addEventListener('click', (e) => {
-      // Se o clique veio de dentro do player, só alterna play/pause
+    // Clique no wrapper: iniciar / pausar / retomar / reiniciar
+    wrapper.addEventListener('click', () => {
+      // Primeiro clique — inicia com som
+      if (!hasStarted) {
+        video.muted = false;
+        video.play().catch(() => {
+          // Se falhar por política de autoplay, tenta muted
+          video.muted = true;
+          video.play();
+        });
+        hasStarted = true;
+        return;
+      }
+
+      // Se terminou, reinicia
       if (hasEnded) {
         video.currentTime = 0;
         video.play();
         hasEnded = false;
         return;
       }
+
+      // Alterna play/pause
       if (video.paused) {
         video.play();
       } else {
         video.pause();
       }
     });
-
-    // Tentativa de desmutar no primeiro tap do usuário (gatilho global)
-    let unmuted = false;
-    function tryUnmute() {
-      if (unmuted) return;
-      video.muted = false;
-      unmuted = true;
-      document.removeEventListener('click', tryUnmute);
-      document.removeEventListener('touchstart', tryUnmute);
-    }
-    document.addEventListener('click', tryUnmute, { once: false });
-    document.addEventListener('touchstart', tryUnmute, { once: false, passive: true });
   })();
 
   // ========== COUNTDOWN TIMER ==========
